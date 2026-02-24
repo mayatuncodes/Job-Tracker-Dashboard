@@ -8,13 +8,8 @@ querySelector("selector") Picks the first element that matches a CSS selector. C
 querySelectorAll("selector") Picks all elements that match a CSS selector. Returns a static list (does not auto-update if new elements are added).
 
   <!-- Answer No-2 -->
-The DOM is the structure of a webpage, where all the HTML elements live. Sometimes, we need a new element, like a div, paragraph, or button.
+The DOM is like the skeleton of a webpage where all HTML lives. We can create new elements (like divs, paragraphs, or buttons) using JavaScript. First, we make the element in memory, then we can add text or HTML inside it.
 
-Steps: 1.Create a new element We use JavaScript to make a new element. At this point, it exists only in memory as an object, not yet on the page.
-
-2.Add content to the element We can put text or HTML content inside this element.
-
-3.Insert it into the DOM We add the new element to an existing element on the page or at the end of the DOM. If we don’t do this, the element stays in memory and the user won’t see it.
 
    <!-- Answer No-3 -->
 Event Bubbling What it is: When an event happens on an element (like a click), it first runs on that element. Then the same event “bubbles up” to its parent elements, one by one, all the way up to the root of the page (the element).
