@@ -19,8 +19,6 @@ function setActiveTab(tab) {
   tabs.forEach((t) => t.classList.remove("active"));
   tab.classList.add("active");
 }
-
-
 // Update Dashboard
 function updateDashboard() {
   const cards = document.querySelectorAll(".job-card");
@@ -71,7 +69,6 @@ function filterJobs(status, tabElement) {
     }
   }
 }
-
 // Change Status
 function changeStatus(card, newStatus) {
   const badge = card.querySelector(".status-badge");
@@ -95,7 +92,6 @@ function changeStatus(card, newStatus) {
   updateDashboard();
   filterJobs(currentFilter, document.querySelector(".tab-btn.active"));
 }
-
 // Setup Cards
 function setupCard(card) {
   const interviewBtn = card.querySelector(".interview-btn");
@@ -114,7 +110,6 @@ function setupCard(card) {
     filterJobs(currentFilter, document.querySelector(".tab-btn.active"));
   });
 }
-
 // Initialize
 document.querySelectorAll(".job-card").forEach(setupCard);
 allTab.addEventListener("click", () => filterJobs("all", allTab));
